@@ -46,3 +46,18 @@ clear: elements with clear don't move up next to a float like the float property
 Explain clearfix 
 
 It clears elements after the element with a set code 
+
+What is a Trie? 
+
+What might you want to stoe in each node? 
+
+An efficient reTreval data structure. Keys are stored in a well balanced binary search tree. Storing a key takes MlogN where M is ma string lengt and N is the nmber of keys. Can search a key in O(m) time. For autocomplete, each node is letter and each node holds top results of next letter/words
+
+How do you handle it when you Trie becomes too large to be stored on one machine? 
+
+Divide ranges of nodes among different machines. Initially had everything in 3 machines so system would still work if one machine went down. Would expand to 3 more machines if want  half to be on new machines (since evertyhingn can't fit in one)
+
+How would you collect and update the top results for a certain node in the Trie? 
+
+Have a distributed cache that data bases can access before sending a request to the machine with the trie would more that likely be LRU cache (or memcache)
+
