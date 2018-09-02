@@ -29,3 +29,10 @@ Alll host: each host generates tinyURL, sharing parts of the 43 bits that the si
 
 Range based: seperating host work by range of combinations (one has first million etc) scales well. If one dies, have other ranges to use. Can keep adding ranges until reach max. Security threat since hackers to use. Can keep adding ranges until reach max. Security threat since hackers can predict next url. Add extra bits to get past this.
 
+Describe Prim's minimum spanning tree(mst)
+
+1. create a set mst set that keeps track of vertice  already included in MST 
+2. Assign a key value to all vertices in teh input graph. 
+Initialize all key values as inifite . Assign key values as 0 for the first vertex so that it is picked first. 
+3) while not mst set doesn't include all vertices 
+a) pick a vertex v which is not there in mst set and has minimum key value b) include v to mst set (value being distnace to most recent vertex) c) update key value of all adjacent vertices of v (update is weight from v-u is least than previous amount)
