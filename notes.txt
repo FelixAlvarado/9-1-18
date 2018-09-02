@@ -1,0 +1,18 @@
+Explain the difference between inline and inline block
+
+inline sites inline 
+aceepts margin and padding, but will onlymove other element horizontally, not vertially 
+will not accept a height and width
+
+Expalin display: block
+Most container element like <div>, <setion> and <ul> are set to display:block by default. 
+Block elements don't sit inline, and break past themselves.
+hey take up as much horizontal space as they can by default
+
+What does position relative and absolute do? 
+
+relaive: an element original position remains in the flow of the document, jist like the static value. But now left, right , top bottom z-index will work 
+
+absolute: the elemtn is removed from the flow of the document and other elements will hehave as if it's not even there whilst all othe other positional properties will work on it.
+
+
