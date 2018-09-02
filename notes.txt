@@ -15,4 +15,17 @@ relaive: an element original position remains in the flow of the document, jist 
 
 absolute: the elemtn is removed from the flow of the document and other elements will hehave as if it's not even there whilst all othe other positional properties will work on it.
 
+What is the MD5 way of generating a tinURL? 
+
+You take the first 43 bits of a tinyURL, convert it into numbers, and convert each number into the tiny URL by mapping then into a letter or value
+
+Explain the counter based approach (with tinyURL)?
+
+3 type: single host, all host, range based 
+
+Single host: one host fives a tinyURL and increments a counter every time it fives one out. That host is single point of failur and bottleneck. 
+
+Alll host: each host generates tinyURL, sharing parts of the 43 bits that the single host would. With high traffic, there is high change of collision. Need more than 43 bits for it to properly work. 
+
+Range based: seperating host work by range of combinations (one has first million etc) scales well. If one dies, have other ranges to use. Can keep adding ranges until reach max. Security threat since hackers to use. Can keep adding ranges until reach max. Security threat since hackers can predict next url. Add extra bits to get past this.
 
