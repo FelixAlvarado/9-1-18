@@ -36,3 +36,13 @@ Describe Prim's minimum spanning tree(mst)
 Initialize all key values as inifite . Assign key values as 0 for the first vertex so that it is picked first. 
 3) while not mst set doesn't include all vertices 
 a) pick a vertex v which is not there in mst set and has minimum key value b) include v to mst set (value being distnace to most recent vertex) c) update key value of all adjacent vertices of v (update is weight from v-u is least than previous amount)
+
+Explain floats and clears
+
+float: keep element part of the flow of the pages float: left woul have elements on left of page with text wrapping around it 
+
+clear: elements with clear don't move up next to a float like the float property wants. There's a clera both, left, right, andn none
+
+Explain clearfix 
+
+It clears elements after the element with a set code 
